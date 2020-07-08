@@ -5,7 +5,6 @@ import time
 
 
 from applitools.selenium import (
-    logger,
     VisualGridRunner,
     Eyes,
     Target,
@@ -42,7 +41,7 @@ def ultra_fast_test(web_driver, eyes):
     try:
         # Navigate to the url we want to test
         web_driver.get("https://demo.applitools.com/gridHackathonV1.html")
-        web_driver.implicitly_wait(10)
+        web_driver.implicitly_wait(5)
 
 
         # Call Open on eyes to initialize a test session (Task1)
@@ -68,12 +67,13 @@ def ultra_fast_test(web_driver, eyes):
         # Filtering black color shoes by clicking on black color Checkbox and click Filter button for results
         elements = web_driver.find_elements_by_class_name("container_check")
         for element in elements:
+            print(element.text)
             if "Black" in element.text:
                 element.click()
                 break
         web_driver.find_element_by_id("filterBtn").click()
         web_driver.find_element_by_id("product_grid")
-        time.sleep(10)
+        time.sleep(5)
 
         # take screenshot for the filtered results
         eyes.check("Filter Results", Target.window().region("#product_grid"))
@@ -86,7 +86,9 @@ def ultra_fast_test(web_driver, eyes):
 
         # Go to the first black shoe product details
         elements = web_driver.find_elements_by_class_name("grid_item")
-        web_driver.get(elements[0].find_element_by_tag_name('a').get_attribute('href'))
+        elements[0].find_element_by_tag_name('a').click()
+
+        web_driver.find_element_by_id("DIV__pageheader__66").is_displayed()
         time.sleep(5)
 
         # take screenshot for the Product Details

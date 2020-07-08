@@ -1,0 +1,16 @@
+After code maintenance in V2 script:
+=============================================================
+
+Task: 1, Test Name: Search field is displayed in the page, DOM Id: DIV__customsear__41, Viewport: 900X700, Device: Laptop, Status: True
+Task: 1, Test Name: Top banner is displayed in the page, DOM Id: DIV__topbanner__188, Viewport: 900X700, Device: Laptop, Status: True
+Task: 1, Test Name: Product Grid is displayed in the page, DOM Id: product_grid, Viewport: 900X700, Device: Laptop, Status: True
+Task: 2, Test Name: Filter is displayed in the page, DOM Id: ti-filter, Viewport: 900X700, Device: Laptop, Status: True
+Task: 2, Test Name: Black color checkbox element is displayed in the page, DOM Id: <selenium.webdriver.remote.webelement.WebElement (session="435b3c8572970ee835b39be47d9498ed", element="1cedfd46-fea9-43f6-b5ef-41a5a6c85442")>, Viewport: 900X700, Device: Laptop, Status: True
+Task: 2, Test Name: Check Filter Button is displayed in the page, DOM Id: filterBtn, Viewport: 900X700, Device: Laptop, Status: True
+Task: 2, Test Name: Other color products also displayed in the page along with black color: ERROR in Filtering, DOM Id: grid_item, Viewport: 900X700, Device: Laptop, Status: True
+Task: 3, Test Name: Clicking on First product item in the grid item, DOM Id: grid_item, Viewport: 900X700, Device: Laptop, Status: True
+Task: 3, Test Name: First product page header is displayed, DOM Id: DIV__pageheader__66, Viewport: 900X700, Device: Laptop, Status: True
+Task: 3, Test Name: Verify product name, DOM Id: DIV__pageheader__66, Viewport: 900X700, Device: Laptop, Status: True
+
+
+
